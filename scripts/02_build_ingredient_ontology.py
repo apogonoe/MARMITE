@@ -55,12 +55,23 @@ def lire(nom):
 
 
 def plus_long(nom, motifs):
-    """Cherche le motif le plus long contenu dans `nom`. Permet d'ecrire une
-    regle generale ('butter') puis son exception ('peanut butter')."""
-    trouve, longueur = None, -1
+    """Cherche le motif le plus pertinent contenu dans `nom`.
+
+    Deux regles, dans cet ordre :
+      1. un motif qui TERMINE le nom l'emporte — en cuisine le nom de tete
+         porte la nature du produit : « olive oil » est une huile, pas une
+         olive ; « chicken broth » est un bouillon, pas de la volaille ;
+      2. a position egale, le motif le plus long gagne, ce qui permet
+         d'ecrire une regle generale ('butter') puis son exception
+         ('peanut butter').
+    """
+    trouve, score = None, -1
     for motif, valeur in motifs:
-        if motif in nom and len(motif) > longueur:
-            trouve, longueur = valeur, len(motif)
+        if motif not in nom:
+            continue
+        s = len(motif) + (100 if nom.endswith(motif) else 0)
+        if s > score:
+            trouve, score = valeur, s
     return trouve
 
 

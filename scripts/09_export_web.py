@@ -13,6 +13,7 @@ Sorties :
 
 Usage : python3 scripts/09_export_web.py
 """
+import argparse
 import csv
 import glob
 import json
@@ -51,9 +52,34 @@ def charger_etapes():
     return out
 
 
+def charger_titres_fr():
+    """Titres traduits par l'etape 04.
+
+    DESACTIVE PAR DEFAUT. Compares sur les memes titres, opus-mt-en-fr et
+    NLLB-600M produisent tous deux des contresens visibles :
+      Blueberry Scones        -> « Ecossais de bleuets »
+      Abby's Pecan Apple Cake -> « Cake aux pommes de terre »
+      Buttermilk Pie          -> « Tarte de lait de boucherie »
+    Les titres de recettes sont des empilements de noms sans verbe, melant
+    marques et noms propres : c'est hors de portee d'un petit modele de
+    traduction. Mieux vaut l'anglais qu'un contresens.
+    Les ingredients, eux, sont a 100 % en francais (etape 04 + table curee) :
+    c'est ce qui porte la recherche, le placard, les courses et les prix.
+    Passer --titres-fr pour les activer quand un meilleur modele sera passe.
+    """
+    f = Path("data/work/titres_fr.json")
+    return json.loads(f.read_text()) if f.exists() else {}
+
+
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--titres-fr", action="store_true",
+                    help="utiliser les titres traduits (qualite insuffisante, voir docstring)")
+    args = ap.parse_args()
+
     WEB.mkdir(exist_ok=True)
     etapes = charger_etapes()
+    titres_fr = charger_titres_fr() if args.titres_fr else {}
     with open("data/ref/ingredients.csv", encoding="utf-8") as f:
         ing = list(csv.DictReader(l for l in f if not l.lstrip().startswith("#")))
 
@@ -96,7 +122,8 @@ def main():
                 for it in r["ing"] if it.get("cid") in idx_ing]
         sortie.append({
             "i": i,
-            "t": r["nom_en"],
+            "t": titres_fr.get(r["nom_en"], r["nom_en"]),
+            "t_en": r["nom_en"] if r["nom_en"] in titres_fr else None,
             "m": r["min"],
             "p": r["portions"],
             "c": int(round((r["cout_part"] or 0) * 100)),   # centimes
@@ -135,7 +162,9 @@ def main():
     print(f"ingredients retenus  : {len(ing_gardes):,}")
     print(f"tags / categories    : {len(tags)} / {len(cats)}")
     avec = sum(1 for r in sortie if r["st"])
+    fr = sum(1 for r in sortie if r["t_en"])
     print(f"avec instructions    : {avec:,} ({avec/len(sortie)*100:.1f} %)")
+    print(f"titres en francais   : {fr:,} ({fr/len(sortie)*100:.1f} %)")
     print(f"web/recipes.json     : {mo('recipes.json'):.1f} Mo")
     print(f"web/ingredients.json : {mo('ingredients.json'):.2f} Mo")
 

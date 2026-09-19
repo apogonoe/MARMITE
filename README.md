@@ -95,6 +95,53 @@ humain et non du dérivé :
 Mesure de couverture : après repliement lexical, **2 000 ingrédients canoniques
 couvrent 93,6 %** des lignes du corpus, 3 000 en couvrent 95,4 %.
 
+## Traduction française
+
+Deux niveaux, parce que la traduction automatique se trompe lourdement sur le
+vocabulaire culinaire :
+
+1. **`data/ref/fr_ingredients.csv`** — 275 traductions curées à la main, qui
+   font autorité. Sans elles, `all-purpose flour` devient « farine tout usage »
+   (du québécois) et `nut` devient… « écrou ».
+2. **`Helsinki-NLP/opus-mt-en-fr`** pour la traîne. Chaque nom est enchâssé
+   dans une phrase qui impose le sens culinaire
+   (`Shopping list: 500 g of X.`) avant d'être traduit, puis l'amorce est
+   retirée. C'est ce qui fait passer `nut` de « écrou » à « noix ».
+
+Résultat : **2 897 ingrédients sur 2 897 en français**, ce qui porte la
+recherche, le garde-manger, la liste de courses et l'affichage des prix.
+
+### Les titres de recettes restent en anglais
+
+Testé sur les mêmes titres, `opus-mt-en-fr` **et** `NLLB-200-distilled-600M`
+produisent tous deux des contresens visibles :
+
+| Titre | opus-mt | NLLB-600M |
+|---|---|---|
+| Blueberry Scones | Écossais de bleuets | Les coquilles de bleu |
+| Abby's Pecan Apple Cake | Cake aux **pommes de terre** | Le gâteau de pommes Pecan |
+| Buttermilk Pie | Tarte de lait de **boucherie** | Pie à beurre |
+
+Un titre de recette est un empilement de noms sans verbe, mêlant marques et
+noms propres : c'est hors de portée d'un petit modèle de traduction. Mieux vaut
+l'anglais qu'un contresens. Le travail est conservé
+(`data/work/titres_fr.json`) et s'active avec
+`python3 scripts/09_export_web.py --titres-fr` quand un meilleur modèle sera
+passé.
+
+## Attribution des catégories : la règle du nom de tête
+
+`plus_long()` applique deux règles, dans cet ordre :
+
+1. **un motif qui termine le nom l'emporte** — en cuisine, le nom de tête porte
+   la nature du produit : « olive oil » est une huile, pas une olive ;
+   « chicken broth » est un bouillon, pas de la volaille ;
+2. à position égale, le motif le plus long gagne — ce qui permet d'écrire une
+   règle générale (`butter`) puis son exception (`peanut butter`).
+
+Sans la première règle, l'huile d'olive héritait d'une conservation de 7 jours
+au lieu de 120 et sortait du fond de placard.
+
 ## Prix
 
 Les prix sont des **ordres de grandeur**, pas des relevés. L'app permet de

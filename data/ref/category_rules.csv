@@ -39,14 +39,12 @@ cilantro,herbe
 mint,herbe
 tarragon,herbe
 marjoram,herbe
-bay leaf,herbe
 herb,herbe
 butter,matiere_grasse
 oil,matiere_grasse
 margarine,matiere_grasse
 shortening,matiere_grasse
 lard,matiere_grasse
-peanut butter,oleagineux
 milk,laitier
 cream,laitier
 yogurt,laitier
@@ -170,7 +168,6 @@ melon,fruit
 avocado,fruit
 date,fruit
 fig,fruit
-broth,bouillon
 stock,bouillon
 bouillon,bouillon
 sauce,condiment
@@ -270,3 +267,17 @@ chutney,condiment
 marinade,condiment
 ice,boisson
 broth,bouillon
+applesauce,fruit
+cocoa powder,sucrant
+coconut milk,oleagineux
+almond milk,oleagineux
+soy milk,legumineuse
+rice milk,cereale
+peanut butter,oleagineux
+almond butter,oleagineux
+apple butter,fruit
+baking powder,patisserie
+baking soda,patisserie
+bay leaf,epice
+onion powder,epice
+garlic powder,epice

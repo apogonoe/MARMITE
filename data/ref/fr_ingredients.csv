@@ -1,0 +1,280 @@
+# Traductions curees des ingredients les plus frequents.
+# La traduction automatique s'en sort mal sur le vocabulaire culinaire
+# ("all-purpose flour" -> "farine tout usage", qui est du quebecois).
+# Ces noms font autorite ; le reste est traduit par modele a l'etape 04.
+id,fr
+salt,sel
+pepper_black,poivre noir
+pepper_white,poivre blanc
+butter,beurre
+margarine,margarine
+sugar_white,sucre
+sugar_brown,cassonade
+sugar_icing,sucre glace
+flour,farine
+flour_bread,farine de gruau
+flour_self_raising,farine avec levure
+egg,oeuf
+egg_white,blanc d'oeuf
+egg_yolk,jaune d'oeuf
+water,eau
+ice,glacons
+onion,oignon
+onion_red,oignon rouge
+spring_onion,cebette
+shallot,echalote
+garlic,ail
+garlic_powder,ail en poudre
+garlic_salt,sel d'ail
+onion_powder,oignon en poudre
+olive_oil,huile d'olive
+vegetable_oil,huile vegetale
+canola_oil,huile de colza
+sunflower_oil,huile de tournesol
+peanut_oil,huile d'arachide
+sesame_oil,huile de sesame
+shortening,vegetaline
+cooking_spray,huile en spray
+milk,lait
+buttermilk,babeurre
+milk_evaporated,lait evapore
+milk_condensed,lait concentre sucre
+coconut_milk,lait de coco
+cream,creme
+cream_heavy,creme entiere
+sour_cream,creme aigre
+half_and_half,creme legere
+yogurt,yaourt
+whipped_cream,creme fouettee
+whipped_topping,creme a fouetter
+ice_cream,glace
+cream_cheese,fromage frais
+cottage_cheese,cottage cheese
+ricotta,ricotta
+cheese,fromage
+parmesan,parmesan
+cheddar,cheddar
+mozzarella,mozzarella
+swiss_cheese,emmental
+feta,feta
+monterey_jack,monterey jack
+processed_cheese,fromage fondu
+tomato,tomate
+tomato_cherry,tomate cerise
+tomato_sundried,tomate sechee
+tomato_sauce,coulis de tomate
+tomato_paste,concentre de tomate
+carrot,carotte
+celery,celeri
+potato,pomme de terre
+sweet_potato,patate douce
+bell_pepper,poivron
+bell_pepper_red,poivron rouge
+bell_pepper_green,poivron vert
+jalapeno,piment jalapeno
+chili_green,piment vert
+mushroom,champignon
+zucchini,courgette
+cucumber,concombre
+eggplant,aubergine
+spinach,epinard
+broccoli,brocoli
+cauliflower,chou-fleur
+cabbage,chou
+lettuce,laitue
+leek,poireau
+corn,mais
+pea,petit pois
+bean_green,haricot vert
+bean_black,haricot noir
+bean_kidney,haricot rouge
+bean_pinto,haricot pinto
+chickpea,pois chiche
+asparagus,asperge
+artichoke,artichaut
+pumpkin,potiron
+avocado,avocat
+olive,olive
+caper,capre
+parsnip,panais
+rhubarb,rhubarbe
+sauerkraut,choucroute
+water_chestnut,chataigne d'eau
+tofu,tofu
+lemon,citron
+lemon_juice,jus de citron
+lemon_zest,zeste de citron
+lime,citron vert
+lime_juice,jus de citron vert
+orange,orange
+orange_juice,jus d'orange
+orange_zest,zeste d'orange
+apple,pomme
+apple_juice,jus de pomme
+applesauce,compote de pommes
+banana,banane
+strawberry,fraise
+blueberry,myrtille
+raspberry,framboise
+cranberry,canneberge
+peach,peche
+pear,poire
+pineapple,ananas
+pineapple_juice,jus d'ananas
+mango,mangue
+apricot,abricot
+raisin,raisin sec
+coconut,noix de coco
+parsley,persil
+basil,basilic
+oregano,origan
+thyme,thym
+rosemary,romarin
+sage,sauge
+dill,aneth
+chive,ciboulette
+cilantro,coriandre fraiche
+mint,menthe
+tarragon,estragon
+marjoram,marjolaine
+bay_leaf,feuille de laurier
+cinnamon,cannelle
+cinnamon_stick,baton de cannelle
+nutmeg,muscade
+cumin,cumin
+paprika,paprika
+cayenne,piment de Cayenne
+chili_powder,piment en poudre
+chili_flakes,piment en flocons
+curry_powder,curry
+turmeric,curcuma
+coriander,graines de coriandre
+clove,clou de girofle
+allspice,quatre-epices
+cardamom,cardamome
+ginger,gingembre
+italian_seasoning,herbes italiennes
+garam_masala,garam masala
+taco_seasoning,epices a tacos
+seasoned_salt,sel aromatise
+celery_seed,graines de celeri
+sesame_seed,graines de sesame
+chicken,poulet
+chicken_breast,blanc de poulet
+chicken_thigh,cuisse de poulet
+chicken_broth,bouillon de volaille
+turkey,dinde
+beef,boeuf
+beef_broth,bouillon de boeuf
+pork,porc
+pork_chop,cote de porc
+pork_tenderloin,filet de porc
+ham,jambon
+bacon,lard
+sausage_italian,saucisse italienne
+prosciutto,jambon cru
+shrimp,crevette
+salmon,saumon
+vegetable_broth,bouillon de legumes
+rice_white,riz
+rice_brown,riz complet
+pasta,pates
+pasta_spaghetti,spaghetti
+pasta_macaroni,macaroni
+pasta_linguine,linguine
+oats,flocons d'avoine
+cornmeal,semoule de mais
+cornstarch,maizena
+breadcrumbs,chapelure
+graham_crumbs,biscuits emiettes
+bread,pain
+tortilla,tortilla
+tortilla_corn,tortilla de mais
+pie_crust,pate a tarte
+puff_pastry,pate feuilletee
+wheat_germ,germe de ble
+almond,amande
+walnut,noix
+pecan,noix de pecan
+peanut,cacahuete
+pine_nut,pignon de pin
+peanut_butter,beurre de cacahuete
+honey,miel
+maple_syrup,sirop d'erable
+corn_syrup,sirop de glucose
+molasses,melasse
+chocolate,chocolat
+chocolate_chips,pepites de chocolat
+cocoa,cacao
+marshmallow,chamallow
+mayonnaise,mayonnaise
+mustard,moutarde
+mustard_dijon,moutarde de Dijon
+ketchup,ketchup
+soy_sauce,sauce soja
+worcestershire,sauce Worcestershire
+fish_sauce,nuoc-mam
+hot_sauce,sauce piquante
+chili_sauce,sauce chili
+bbq_sauce,sauce barbecue
+salsa,salsa
+horseradish,raifort
+liquid_smoke,arome fume
+vinegar_white,vinaigre blanc
+vinegar_cider,vinaigre de cidre
+vinegar_balsamic,vinaigre balsamique
+vinegar_red_wine,vinaigre de vin rouge
+vinegar_white_wine,vinaigre de vin blanc
+vinegar_rice,vinaigre de riz
+wine_white,vin blanc
+wine_red,vin rouge
+beer,biere
+rum,rhum
+brandy,cognac
+sherry,xeres
+baking_powder,levure chimique
+baking_soda,bicarbonate
+yeast,levure de boulanger
+vanilla_extract,extrait de vanille
+almond_extract,extrait d'amande
+cream_of_tartar,creme de tartre
+soup_mushroom,soupe aux champignons
+soup_chicken,soupe au poulet
+# Mots que le modele traduit hors du sens culinaire, meme avec un cadre.
+date,datte
+chip,chips
+round,gite de boeuf
+shell,fond de tarte
+stock,bouillon
+bar,barre
+dressing,vinaigrette
+roll,petit pain
+stick,baton
+greens,legumes verts
+sprout,germe
+squash,courge
+mince,viande hachee
+rocket,roquette
+prawn,gambas
+rub,melange d'epices
+spread,pate a tartiner
+topping,garniture
+filling,garniture
+batter,pate a frire
+dough,pate
+crust,pate a tarte
+peel,zeste
+rind,zeste
+tip,pointe
+marrow,courgette
+swede,rutabaga
+gammon,jambon
+button_mushroom,champignon de Paris
+stewed_tomato,tomates mijotees
+lime_gelatin,gelatine au citron vert
+ketjap_manis,kecap manis
+rub_seasoning,melange d'epices a frotter
+saltine_crumb,crackers emiettes
+mexican_style_stewed_tomato,tomates mijotees a la mexicaine
+condensed_cream_of_potato_soup,veloute de pomme de terre condense
+grainy_mustard,moutarde a l'ancienne
