@@ -1,0 +1,30 @@
+# Categories d'ingredients.
+# conservation_j : duree de conservation par defaut (alertes de peremption).
+# fond_placard   : produit suppose toujours disponible ; n'entre pas dans le
+#                  score « ce qu'il te manque ».
+# g_ml_defaut / g_piece_defaut : valeurs de repli quand l'ingredient n'a pas
+#                  sa propre densite. Marquees comme estimations dans la sortie.
+id,label_fr,conservation_j,fond_placard,g_ml_defaut,g_piece_defaut,eur_kg_defaut
+legume,Legume,7,0,0.60,120,3.00
+fruit,Fruit,7,0,0.65,150,3.50
+herbe,Herbe aromatique,5,0,0.25,5,25.00
+epice,Epice,730,1,0.50,2,20.00
+viande,Viande,3,0,0.70,150,12.00
+volaille,Volaille,2,0,0.70,150,9.00
+poisson,Poisson et fruits de mer,2,0,0.70,150,18.00
+laitier,Produit laitier,10,0,1.02,200,3.00
+fromage,Fromage,21,0,0.45,30,13.00
+oeuf,Oeuf,28,0,1.03,50,5.50
+cereale,Cereale et feculent,365,1,0.70,100,2.50
+pain,Pain et boulangerie,4,0,0.25,40,4.00
+legumineuse,Legumineuse,730,1,0.75,150,3.00
+oleagineux,Fruits secs et graines,180,0,0.50,1,14.00
+matiere_grasse,Matiere grasse,120,1,0.92,113,5.00
+sucrant,Sucre et sirop,730,1,0.85,20,6.00
+condiment,Condiment et sauce,180,1,1.05,15,6.00
+bouillon,Bouillon,365,1,1.00,250,1.50
+alcool,Alcool,730,0,0.98,750,8.00
+boisson,Boisson,90,0,1.00,250,2.00
+patisserie,Ingredient de patisserie,365,1,0.60,10,15.00
+transforme,Produit transforme,180,0,0.80,200,7.00
+autre,Autre,90,0,0.70,100,5.00

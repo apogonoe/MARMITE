@@ -1,0 +1,17 @@
+# Données : jamais dans git (volumineuses, régénérables)
+data/raw/
+data/work/
+web/
+*.pack
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# Divers
+.DS_Store
+
+# Derive du corpus par le script 02 (14 Mo) : regenere, pas versionne
+data/ref/aliases.csv

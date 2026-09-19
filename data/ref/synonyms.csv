@@ -1,0 +1,328 @@
+# Fusion des variantes vers un ingredient canonique.
+# Colonne 1 : forme repliee telle qu'elle sort de marmite.normalize.text
+# Colonne 2 : identifiant canonique
+variante,canonique
+salt,salt
+kosher salt,salt
+sea salt,salt
+table salt,salt
+fine salt,salt
+sugar,sugar_white
+granulated sugar,sugar_white
+white sugar,sugar_white
+caster sugar,sugar_white
+superfine sugar,sugar_white
+brown sugar,sugar_brown
+dark brown sugar,sugar_brown
+light brown sugar,sugar_brown
+powdered sugar,sugar_icing
+confectioner sugar,sugar_icing
+icing sugar,sugar_icing
+flour,flour
+all-purpose flour,flour
+wheat flour,flour
+white flour,flour
+plain flour,flour
+bread flour,flour_bread
+self raising flour,flour_self_raising
+butter,butter
+margarine,margarine
+egg,egg
+hard-boiled egg,egg
+egg white,egg_white
+egg yolk,egg_yolk
+water,water
+onion,onion
+yellow onion,onion
+white onion,onion
+sweet onion,onion
+red onion,onion_red
+green onion,spring_onion
+scallion,spring_onion
+spring onion,spring_onion
+shallot,shallot
+garlic,garlic
+garlic clove,garlic
+garlic powder,garlic_powder
+garlic salt,garlic_salt
+olive oil,olive_oil
+virgin olive oil,olive_oil
+vegetable oil,vegetable_oil
+cooking oil,vegetable_oil
+oil,vegetable_oil
+canola oil,canola_oil
+peanut oil,peanut_oil
+sesame oil,sesame_oil
+sunflower oil,sunflower_oil
+cooking spray,cooking_spray
+shortening,shortening
+milk,milk
+skim milk,milk
+buttermilk,buttermilk
+evaporated milk,milk_evaporated
+condensed milk,milk_condensed
+coconut milk,coconut_milk
+cream,cream
+heavy cream,cream_heavy
+whipping cream,cream_heavy
+heavy whipping cream,cream_heavy
+half-and-half,half_and_half
+sour cream,sour_cream
+yogurt,yogurt
+whipped cream,whipped_cream
+whipped topping,whipped_topping
+cool whip,whipped_topping
+cream cheese,cream_cheese
+cottage cheese,cottage_cheese
+ricotta cheese,ricotta
+cheese,cheese
+cheddar cheese,cheddar
+sharp cheddar cheese,cheddar
+parmesan cheese,parmesan
+mozzarella cheese,mozzarella
+swiss cheese,swiss_cheese
+feta cheese,feta
+monterey jack cheese,monterey_jack
+velveeta cheese,processed_cheese
+pepper,pepper_black
+black pepper,pepper_black
+white pepper,pepper_white
+cayenne,cayenne
+cayenne pepper,cayenne
+red pepper flake,chili_flakes
+chili powder,chili_powder
+paprika,paprika
+sweet paprika,paprika
+cinnamon,cinnamon
+cinnamon stick,cinnamon_stick
+nutmeg,nutmeg
+clove,clove
+allspice,allspice
+cardamom,cardamom
+turmeric,turmeric
+cumin,cumin
+cumin seed,cumin
+coriander,coriander
+curry powder,curry_powder
+italian seasoning,italian_seasoning
+taco seasoning,taco_seasoning
+seasoning salt,seasoned_salt
+celery seed,celery_seed
+sesame seed,sesame_seed
+onion powder,onion_powder
+bay leaf,bay_leaf
+parsley,parsley
+flat leaf parsley,parsley
+parsley flake,parsley
+basil,basil
+basil leaf,basil
+oregano,oregano
+thyme,thyme
+thyme leaf,thyme
+rosemary,rosemary
+sage,sage
+dill,dill
+dill weed,dill
+chive,chive
+cilantro,cilantro
+mint,mint
+tarragon,tarragon
+marjoram,marjoram
+ginger,ginger
+gingerroot,ginger
+vanilla,vanilla_extract
+vanilla extract,vanilla_extract
+pure vanilla extract,vanilla_extract
+almond extract,almond_extract
+baking powder,baking_powder
+baking soda,baking_soda
+yeast,yeast
+active yeast,yeast
+cream of tartar,cream_of_tartar
+cornstarch,cornstarch
+cornmeal,cornmeal
+breadcrumb,breadcrumbs
+graham cracker crumb,graham_crumbs
+tomato,tomato
+plum tomato,tomato
+roma tomato,tomato
+cherry tomato,tomato_cherry
+sun- tomato,tomato_sundried
+tomato sauce,tomato_sauce
+tomato paste,tomato_paste
+carrot,carrot
+celery,celery
+celery rib,celery
+potato,potato
+red potato,potato
+russet potato,potato
+sweet potato,sweet_potato
+bell pepper,bell_pepper
+red bell pepper,bell_pepper_red
+red pepper,bell_pepper_red
+green pepper,bell_pepper_green
+green bell pepper,bell_pepper_green
+jalapeno,jalapeno
+jalapeno pepper,jalapeno
+green chili,chili_green
+mushroom,mushroom
+zucchini,zucchini
+cucumber,cucumber
+eggplant,eggplant
+spinach,spinach
+spinach leaf,spinach
+broccoli,broccoli
+broccoli floret,broccoli
+cauliflower,cauliflower
+cabbage,cabbage
+lettuce,lettuce
+iceberg lettuce,lettuce
+leek,leek
+corn,corn
+corn kernel,corn
+kernel corn,corn
+pea,pea
+green bean,bean_green
+black bean,bean_black
+kidney bean,bean_kidney
+pinto bean,bean_pinto
+chickpea,chickpea
+asparagus,asparagus
+artichoke heart,artichoke
+water chestnut,water_chestnut
+pumpkin,pumpkin
+avocado,avocado
+olive,olive
+black olive,olive
+caper,caper
+lemon,lemon
+lemon juice,lemon_juice
+lemon zest,lemon_zest
+lemon rind,lemon_zest
+lemon peel,lemon_zest
+lime,lime
+lime juice,lime_juice
+orange,orange
+orange juice,orange_juice
+orange zest,orange_zest
+apple,apple
+granny smith apple,apple
+apple juice,apple_juice
+applesauce,applesauce
+banana,banana
+strawberry,strawberry
+blueberry,blueberry
+raspberry,raspberry
+cranberry,cranberry
+peach,peach
+pear,pear
+pineapple,pineapple
+pineapple juice,pineapple_juice
+mango,mango
+apricot,apricot
+raisin,raisin
+coconut,coconut
+flaked coconut,coconut
+chicken,chicken
+chicken breast,chicken_breast
+chicken breast half,chicken_breast
+chicken thigh,chicken_thigh
+chicken broth,chicken_broth
+chicken stock,chicken_broth
+beef,beef
+beef broth,beef_broth
+beef stock,beef_broth
+pork,pork
+pork chop,pork_chop
+pork tenderloin,pork_tenderloin
+ham,ham
+bacon,bacon
+turkey,turkey
+italian sausage,sausage_italian
+shrimp,shrimp
+salmon fillet,salmon
+vegetable broth,vegetable_broth
+vegetable stock,vegetable_broth
+rice,rice_white
+brown rice,rice_brown
+pasta,pasta
+spaghetti,pasta_spaghetti
+elbow macaroni,pasta_macaroni
+oat,oats
+rolled oat,oats
+quick oat,oats
+oatmeal,oats
+bread,bread
+tortilla,tortilla
+flour tortilla,tortilla
+corn tortilla,tortilla_corn
+almond,almond
+slivered almond,almond
+walnut,walnut
+pecan,pecan
+peanut,peanut
+pine nut,pine_nut
+peanut butter,peanut_butter
+creamy peanut butter,peanut_butter
+honey,honey
+maple syrup,maple_syrup
+corn syrup,corn_syrup
+molasses,molasses
+chocolate,chocolate
+semisweet chocolate,chocolate
+chocolate chip,chocolate_chips
+semi-sweet chocolate chip,chocolate_chips
+cocoa,cocoa
+cocoa powder,cocoa
+marshmallow,marshmallow
+ice cream,ice_cream
+vanilla ice cream,ice_cream
+mayonnaise,mayonnaise
+mustard,mustard
+dijon mustard,mustard_dijon
+ketchup,ketchup
+soy sauce,soy_sauce
+worcestershire sauce,worcestershire
+fish sauce,fish_sauce
+hot sauce,hot_sauce
+tabasco sauce,hot_sauce
+pepper sauce,hot_sauce
+chili sauce,chili_sauce
+barbecue sauce,bbq_sauce
+salsa,salsa
+horseradish,horseradish
+vinegar,vinegar_white
+white vinegar,vinegar_white
+cider vinegar,vinegar_cider
+apple cider vinegar,vinegar_cider
+balsamic vinegar,vinegar_balsamic
+red wine vinegar,vinegar_red_wine
+white wine vinegar,vinegar_white_wine
+rice vinegar,vinegar_rice
+white wine,wine_white
+red wine,wine_red
+sherry,sherry
+brandy,brandy
+rum,rum
+beer,beer
+ice,ice
+ice cube,ice
+cream of mushroom soup,soup_mushroom
+cream of chicken soup,soup_chicken
+catsup,ketchup
+jalapenos,jalapeno
+green olive,olive
+kalamata olive,olive
+nonstick cooking spray,cooking_spray
+garam masala,garam_masala
+firm tofu,tofu
+tofu,tofu
+prosciutto,prosciutto
+parsnip,parsnip
+rhubarb,rhubarb
+sauerkraut,sauerkraut
+linguine,pasta_linguine
+pie crust,pie_crust
+puff pastry,puff_pastry
+wheat germ,wheat_germ
+liquid smoke,liquid_smoke

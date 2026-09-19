@@ -1,0 +1,15 @@
+# Contenances typiques, en grammes, pour les unites de conditionnement.
+# Sans ca, "1 can of tomatoes" reste non valorisable.
+unite,g_defaut,note
+can,400,conserve standard
+jar,340,bocal
+package,250,sachet / paquet
+bottle,500,bouteille
+box,375,boite
+bag,500,sachet
+tin,400,boite de conserve
+container,225,barquette
+envelope,7,sachet de levure / gelatine
+carton,1000,brique
+loaf,500,pain
+sheet,25,feuille de pate

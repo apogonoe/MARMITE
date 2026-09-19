@@ -1,0 +1,54 @@
+# Densite en g/ml : convertit les volumes de cuisine (cup, tbsp) en grammes.
+# Reference : 1 cup = 236,588 ml. Une farine a 0,53 donne donc 125 g/cup.
+# `match` est un motif cherche dans le nom canonique ; le plus long gagne.
+match,g_per_ml,source
+water,1.00,eau
+broth,1.00,bouillon
+stock,1.00,bouillon
+juice,1.04,jus
+milk,1.03,lait
+buttermilk,1.03,lait
+condensed milk,1.28,lait concentre sucre
+evaporated milk,1.07,lait evapore
+cream,0.99,creme liquide
+heavy cream,0.99,creme entiere
+sour cream,0.96,creme epaisse
+yogurt,1.03,yaourt
+butter,0.96,beurre (1 cup = 227 g)
+margarine,0.96,margarine
+shortening,0.92,vegetaline
+oil,0.92,huile (1 cup = 218 g)
+flour,0.53,farine (1 cup = 125 g)
+bread flour,0.55,farine de force
+cornstarch,0.51,maizena
+cornmeal,0.68,semoule de mais
+sugar,0.85,sucre semoule (1 cup = 200 g)
+brown sugar,0.93,cassonade tassee (1 cup = 220 g)
+powdered sugar,0.56,sucre glace (1 cup = 132 g)
+icing sugar,0.56,sucre glace
+honey,1.42,miel
+syrup,1.33,sirop
+maple syrup,1.32,sirop d erable
+molasses,1.45,melasse
+salt,1.22,sel fin (1 tsp = 6 g)
+baking powder,0.90,levure chimique
+baking soda,0.95,bicarbonate
+cocoa,0.42,cacao en poudre
+rice,0.85,riz cru (1 cup = 200 g)
+oat,0.40,flocons d avoine (1 cup = 95 g)
+breadcrumb,0.45,chapelure
+parmesan cheese,0.40,parmesan rape
+cheese,0.45,fromage rape
+nut,0.50,fruits secs concasses
+chocolate chip,0.72,pepites de chocolat
+raisin,0.62,raisins secs
+coconut,0.35,noix de coco rapee
+vinegar,1.01,vinaigre
+wine,0.99,vin
+soy sauce,1.15,sauce soja
+tomato sauce,1.05,coulis de tomate
+tomato paste,1.10,concentre de tomate
+mayonnaise,0.91,mayonnaise
+ketchup,1.14,ketchup
+mustard,1.05,moutarde
+peanut butter,1.08,beurre de cacahuete

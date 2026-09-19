@@ -1,0 +1,31 @@
+# Corpus & données tabulaires
+pandas
+pyarrow
+numpy
+scipy
+
+# Normalisation d'ingrédients
+rapidfuzz
+unidecode
+inflect
+
+# Traduction FR (local, GPU)
+transformers
+torch
+sentencepiece
+sacremoses
+
+# Embeddings
+sentence-transformers
+
+# Réseau (prix, Open Food Facts, scrapers enseignes)
+httpx
+tenacity
+selectolax
+
+# Images
+pillow
+
+# Confort
+tqdm
+python-dotenv

@@ -1,0 +1,43 @@
+# Poids d'une unite, en grammes : convertit "1 onion" ou "2 eggs" en masse.
+# Indispensable pour le prix ET pour le decompte du garde-manger.
+# `yield_ml` : volume de jus obtenu (agrumes), quand la recette demande du jus.
+match,g_per_piece,yield_ml,note
+egg,50,,oeuf calibre moyen, sans coquille
+egg white,33,,blanc
+egg yolk,17,,jaune
+onion,150,,oignon moyen
+red onion,150,,
+shallot,40,,echalote
+green onion,15,,cebette
+garlic clove,5,,gousse
+garlic,50,,tete entiere
+carrot,60,,carotte moyenne
+celery rib,40,,branche
+potato,170,,pomme de terre moyenne
+sweet potato,200,,
+tomato,120,,tomate moyenne
+cherry tomato,15,,
+bell pepper,150,,poivron
+jalapeno,15,,
+cucumber,300,,concombre
+zucchini,200,,courgette
+eggplant,450,,aubergine
+mushroom,20,,champignon de Paris
+leek,200,,poireau
+lemon,100,45,citron : ~45 ml de jus
+lime,65,30,citron vert
+orange,150,70,orange
+apple,180,,pomme
+banana,120,,banane
+avocado,200,,avocat
+peach,150,,peche
+pear,180,,poire
+chicken breast,175,,blanc de poulet
+chicken thigh,120,,cuisse
+bacon,25,,tranche
+bread,30,,tranche de pain
+tortilla,45,,galette
+butter,113,,1 stick americain = 113 g
+bay leaf,0.2,,feuille de laurier
+cinnamon stick,2.6,,baton de cannelle
+vanilla bean,3,,gousse de vanille

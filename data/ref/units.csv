@@ -1,0 +1,29 @@
+unit,kind,to_g,to_ml,aliases
+g,mass,1,,gram;grams;gramme;grammes;gr
+kg,mass,1000,,kilo;kilos;kilogram;kilograms;kilogramme
+mg,mass,0.001,,milligram;milligrams
+oz,mass,28.3495,,ounce;ounces
+lb,mass,453.592,,pound;pounds;lbs
+ml,volume,,1,milliliter;millilitre;millilitres;milliliters;cc
+cl,volume,,10,centiliter;centilitre
+dl,volume,,100,deciliter;decilitre
+l,volume,,1000,liter;litre;liters;litres
+tsp,volume,,4.92892,teaspoon;teaspoons;t;cuillere a cafe;cac
+tbsp,volume,,14.7868,tablespoon;tablespoons;T;cuillere a soupe;cas
+cup,volume,,236.588,cups;c;tasse;tasses
+fl_oz,volume,,29.5735,fluid ounce;fluid ounces;fl oz
+pint,volume,,473.176,pints;pt
+quart,volume,,946.353,quarts;qt
+gallon,volume,,3785.41,gallons;gal
+piece,count,,,pieces;piece;whole;unit;units;each
+clove,count,,,cloves;gousse;gousses
+slice,count,,,slices;tranche;tranches
+can,count,,,cans;tin;tins;boite;boites
+package,count,,,packages;pkg;pkgs;paquet;sachet;sachets
+bunch,count,,,bunches;botte;bottes
+stalk,count,,,stalks;stick;sticks;branche;branches
+head,count,,,heads;tete
+pinch,vague,,,pinches;pincee;pincees
+dash,vague,,,dashes;trait
+handful,vague,,,handfuls;poignee
+to_taste,vague,,,to taste;au gout;qs
