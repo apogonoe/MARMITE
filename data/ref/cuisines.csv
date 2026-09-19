@@ -1,0 +1,24 @@
+# Cuisines proposees dans l'app.
+# `tags`   : tags Food.com qui designent cette cuisine (separes par ';')
+# `motifs` : mots cherches dans le titre et les ingredients quand AUCUN tag ne
+#            tranche. Indispensable : le corpus n'a aucun tag « Italian », les
+#            recettes italiennes sont noyees dans « European ».
+# L'ordre compte : la premiere cuisine qui correspond gagne, donc les plus
+# specifiques doivent venir avant les plus larges.
+id,label_fr,tags,motifs
+italienne,Italienne,,pasta;spaghetti;lasagna;lasagne;risotto;pizza;pesto;carbonara;gnocchi;tiramisu;marinara;bruschetta;focaccia;penne;fettuccine;linguine;ravioli;minestrone;caprese;alfredo;parmigiana;cannelloni;polenta;ciabatta
+mexicaine,Mexicaine,Mexican;Tex Mex,taco;burrito;enchilada;quesadilla;guacamole;fajita;tortilla;salsa;nacho;chipotle;tostada;churro
+indienne,Indienne,Indian;Pakistani,curry;masala;tikka;tandoori;naan;dal;paneer;biryani;chutney;samosa;korma
+thai,Thaïlandaise,Thai,pad thai;lemongrass;fish sauce;green curry;red curry;thai basil
+japonaise,Japonaise,Japanese,sushi;teriyaki;miso;ramen;tempura;wasabi;edamame;udon;sashimi
+chinoise,Chinoise,Chinese;Cantonese;Szechuan,stir fry;hoisin;wonton;chow mein;lo mein;egg roll;szechuan;kung pao
+asiatique,Asiatique,Asian;Korean;Vietnamese;Filipino;Indonesian;Malaysian;Cambodian;Polynesian,soy sauce;sesame oil;kimchi;pho;satay;spring roll
+grecque,Grecque,Greek,tzatziki;moussaka;souvlaki;gyro;baklava;spanakopita;feta
+mediterraneenne,Méditerranéenne,Southwest Asia (middle East);Lebanese;Turkish;Moroccan;Egyptian;Palestinian;Iraqi;Ramadan,hummus;falafel;tabbouleh;couscous;tagine;baba ghanoush;shawarma;harissa;pita
+francaise,Française,,quiche;crepe;ratatouille;coq au vin;bourguignon;gratin dauphinois;souffle;baguette;bearnaise;hollandaise;bouillabaisse;cassoulet;tarte tatin;creme brulee;madeleine;profiterole;vichyssoise
+cajun,Cajun et créole,Cajun;Creole,jambalaya;gumbo;etouffee;andouille;remoulade;beignet
+britannique,Britannique,Scottish;Welsh;New Zealand,shepherd's pie;scone;trifle;yorkshire pudding;bangers;crumpet;shortbread
+latino,Latino-américaine,South American;Caribbean;Cuban;Brazilian;Peruvian;Colombian;Chilean;Venezuelan;Puerto Rican;Hawaiian,ceviche;empanada;plantain;jerk;mojito;arepa;feijoada
+africaine,Africaine,African;South African;Ethiopian,injera;berbere;piri piri;bobotie
+europeenne,Européenne,European;German;Polish;Swedish;Russian;Portuguese;Spanish;Hungarian;Austrian;Dutch;Belgian;Czech;Danish;Norwegian;Finnish;Swiss;Scandinavian;Icelandic;Pennsylvania Dutch,schnitzel;goulash;pierogi;paella;strudel;sauerbraten;borscht;stroganoff
+americaine,Américaine,Southwestern U.S.;Native American;Canadian;Australian,burger;barbecue;bbq;cornbread;meatloaf;macaroni and cheese;mac and cheese;pancake;brownie;coleslaw;chowder;sloppy joe;buffalo wing

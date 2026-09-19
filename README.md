@@ -54,10 +54,14 @@ dans son `index.html` pour invalider le cache des clients.
 
 ## Données sources
 
-| Source | Rôle | Remarque |
-|---|---|---|
-| `Karo8870/food.com-parsed-dataset` | corpus principal, 490 457 recettes | ingrédients **déjà parsés** en `{quantity, unit, name}` |
-| `KingName1/food.com` | instructions de cuisine | ne couvre que 31,5 % du catalogue |
+| Source | Rôle | Licence | Remarque |
+|---|---|---|---|
+| `Karo8870/food.com-parsed-dataset` | corpus principal, 490 457 recettes | — | ingrédients **déjà parsés** en `{quantity, unit, name}` |
+| `SandhyaKilari/RecipeNLG_dataset` | instructions de cuisine | CC-BY-4.0 | 2,2 M de recettes ; apparie **93,3 %** du catalogue par titre, texte propre |
+| `KingName1/food.com` | instructions, repli | — | couvre 31,5 % ; en minuscules sans ponctuation, sert là où RecipeNLG n'a rien |
+
+Ensemble, les deux sources d'instructions couvrent **93,5 % du catalogue**, sans
+aucun identifiant à créer.
 
 Deux pièges rencontrés, à ne pas refaire :
 
@@ -66,10 +70,10 @@ Deux pièges rencontrés, à ne pas refaire :
 - **Le champ `steps` de `Karo8870` est corrompu sur tout le dataset** : il
   contient les URLs d'images au lieu des instructions.
 
-> **Pour avoir les instructions des 490 457 recettes**, il faut le dataset
-> Kaggle d'origine `irkaal/foodcom-recipes-and-reviews`, qui demande un token
-> API (kaggle.com → Settings → API → Create New Token, puis
-> `~/.kaggle/kaggle.json`). La jointure se fait sur `(name, created_at)`.
+> Les 6,5 % de recettes encore sans instructions se trouveraient dans le
+> dataset Kaggle `irkaal/foodcom-recipes-and-reviews` (jointure sur
+> `(name, created_at)`), mais il demande un compte et un token API — et le gain
+> ne le justifie plus depuis que RecipeNLG couvre l'essentiel.
 
 ## L'ontologie d'ingrédients
 
@@ -128,6 +132,22 @@ l'anglais qu'un contresens. Le travail est conservé
 (`data/work/titres_fr.json`) et s'active avec
 `python3 scripts/09_export_web.py --titres-fr` quand un meilleur modèle sera
 passé.
+
+## Résolution en trois tentatives
+
+Un nom d'ingrédient brut est résolu ainsi, dans l'ordre :
+
+1. **alias direct** — le nom exact est connu ;
+2. **forme repliée** — après nettoyage lexical (`marmite.normalize.text`) ;
+3. **repli sur le nom de tête** — on cherche le plus long groupe de mots connu,
+   en partant de la fin du nom.
+
+La troisième est indispensable. `shelled pecan halves` ne figure pas dans le
+top-N de l'ontologie et était **purement et simplement jeté**, alors qu'il
+contient `pecan`. Sur une recette de noix de pécan, cela faisait tomber le coût
+estimé de 10 € à 0,77 €. Ce repli fait passer la résolution de 95,1 % à
+**99,3 %** des lignes, et les recettes intégralement résolues de 67,9 % à
+**93,8 %**.
 
 ## Attribution des catégories : la règle du nom de tête
 

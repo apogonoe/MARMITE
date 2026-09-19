@@ -22,7 +22,11 @@ _MODIF = (
     "prepared|packed|firmly|hot|cold|warm|room temperature|store-bought|homemade|"
     "good quality|quality|finely|coarsely|thinly|roughly|coarse|fine|thick|thin|"
     "new|old|young|halved|quartered|trimmed|rinsed|drained|divided|optional|"
-    "boiling|warmed|chilled|toasted|roasted|blanched|pitted|stemmed|deveined"
+    "boiling|warmed|chilled|toasted|roasted|blanched|pitted|stemmed|deveined|"
+    # decoupes et portions : ne changent pas l'identite de l'ingredient
+    "shelled|unshelled|halves|half|pieces|piece|chunks|chunk|strips|strip|"
+    "wedges|wedge|rings|ring|florets|floret|sprigs|sprig|cubes|cube|tips|tip|"
+    "bite size|bite-size|rounds|shredded|julienned|matchstick"
 )
 _MODIF_RE = re.compile(r"\b(" + _MODIF + r")\b")
 

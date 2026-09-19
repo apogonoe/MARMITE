@@ -41,6 +41,36 @@ def main():
     for brut, cid in alias.items():
         replie2id.setdefault(normalise(brut), cid)
 
+    def resoudre(nom, _cache={}):
+        """Nom brut -> id(s) canonique(s), en trois tentatives.
+
+        La troisieme est indispensable : une forme composee rare comme
+        « shelled pecan halves » n'entre pas dans le top-N de l'ontologie et
+        etait purement et simplement jetee — alors qu'elle contient « pecan ».
+        Sur une recette de noix de pecan, cela faisait tomber le cout de 10 EUR
+        a 0,77 EUR. On cherche donc le plus long groupe de mots connu, en
+        partant de la fin du nom : en cuisine le nom de tete porte le produit.
+        """
+        if nom in _cache:
+            return _cache[nom]
+        r = alias.get(nom.lower())
+        if r is None:
+            f = normalise(nom)
+            r = replie2id.get(f)
+            if r is None and f:
+                mots = f.split()
+                for n in range(len(mots) - 1, 0, -1):
+                    for d in range(len(mots) - n, -1, -1):
+                        cid = replie2id.get(" ".join(mots[d:d + n]))
+                        if cid:
+                            r = cid
+                            break
+                    if r:
+                        break
+        if len(_cache) < 400_000:
+            _cache[nom] = r
+        return r
+
     stats = Counter()
     par_recette = []
     sortie = open(args.out, "w", encoding="utf-8")
@@ -67,8 +97,7 @@ def main():
                 if not nom:
                     continue
                 stats["lignes"] += 1
-                cle = nom.lower()
-                cids = alias.get(cle) or replie2id.get(normalise(nom))
+                cids = resoudre(nom)
                 if not cids:
                     stats["non_resolu"] += 1
                     sortis.append({"brut": nom[:60], "cid": None, "g": None})
